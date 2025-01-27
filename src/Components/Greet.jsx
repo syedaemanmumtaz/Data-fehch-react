@@ -37,24 +37,24 @@ const Greet = () => {
     }
   }, [data, currentIndex]);
   const handleAddProduct =()=>{
-    // const newProduct = {
-    //   id: Math.floor(Math.random() * 100000),
-    //   title: "New Product",
-    //   description: "This is a new product",
-    //   price: Math.floor(Math.random() * 1000) + 1,
-    //   image: "https://via.placeholder.com/150",
-    // };
-    // setData([...data, newProduct]);
-    // setCurrentIndex(data.length);
-
-    setData([...data, newProduct]);
-    setNewProduct({
+    const newProduct = {
       id: Math.floor(Math.random() * 100000),
       title: "New Product",
       description: "This is a new product",
       price: Math.floor(Math.random() * 1000) + 1,
       image: "https://via.placeholder.com/150",
-    })
+    };
+    setData([...data, newProduct]);
+    setCurrentIndex(data.length);
+
+    // setData([...data, newProduct]);
+    // setNewProduct({
+    //   id: Math.floor(Math.random() * 100000),
+    //   title: "New Product",
+    //   description: "This is a new product",
+    //   price: Math.floor(Math.random() * 1000) + 1,
+    //   image: "https://via.placeholder.com/150",
+    // })
   }
 
 
