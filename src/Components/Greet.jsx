@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 
+
 const Greet = () => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const apiUrl = "https://fakestoreapi.com/products";
+
+
 
   // Fetch the data
   const fetchData = async () => {
